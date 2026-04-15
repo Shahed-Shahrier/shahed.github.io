@@ -1,0 +1,18 @@
+{
+  "name": "Shahed Shahrier Portfolio",
+  "short_name": "Shahed Portfolio",
+  "description": "Offline-first portfolio site for Shahed Shahrier.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071018",
+  "theme_color": "#071018",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

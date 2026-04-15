@@ -1,52 +1,32 @@
 # Shahed Shahrier Portfolio
 
-A clean and responsive personal portfolio website built for GitHub Pages.  
-It highlights profile information, achievements, gallery images, and contact links in a recruiter-friendly format.
+An offline-first, multi-page portfolio for GitHub Pages. The site uses only local assets and keeps each major section on its own landing page so the content is easier to scan and update.
 
-## Key Features
+## Pages
 
-- Responsive single-page layout
-- Hero section with profile and short bio
-- Achievement cards with images and descriptions
-- Gallery section for event/project snapshots
-- Contact section with direct email link
-- Lightweight JavaScript for dynamic footer year and contact setup
+- `index.html` for the home landing page
+- `about.html` for background and working style
+- `achievements.html` for results and highlights
+- `projects.html` for featured work areas
+- `contact.html` for direct contact options
+- `offline.html` for cached fallback browsing
 
-## How It Works
+## Offline-First Setup
 
-The site is a static HTML/CSS project:
-- `index.html` defines the page structure and content sections.
-- `styles.css` handles styling and responsive behavior.
-- A small inline script sets the current year and safely wires email links.
-- Images are served from the `assets/` directory.
+- `service-worker.js` caches the site after the first visit
+- `manifest.webmanifest` declares the app shell for browser install support
+- `assets/icon.svg` provides a local icon with no external dependencies
+- `styles.css` and `site.js` are shared across all pages
 
-## Tech Stack
+## Local Development
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- GitHub Pages (deployment)
+1. Clone the repository.
+2. Open the project folder.
+3. Serve it with any static server or open it through GitHub Pages.
 
-## Run the Project Locally
+If you want to test offline caching locally, use a simple static server instead of opening `index.html` directly from the file system.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shahed-Shahrier/Shahed-Shahrier.github.io.git
-   ```
-2. Go to the project directory:
-   ```bash
-   cd Shahed-Shahrier.github.io
-   ```
-3. Open `index.html` in your browser  
-   (or use a simple static server if preferred).
+## Notes
 
-## Example Output
-
-_Placeholder: Add a screenshot or GIF of the live portfolio homepage here._
-
-## What I Learned
-
-- How to structure a static portfolio for quick recruiter scanning
-- How to keep UI code readable while preserving simple functionality
-- How to organize repository assets to avoid clutter and dead files
-- How small defensive checks in JavaScript improve reliability
+- The design intentionally avoids external fonts and remote assets.
+- The structure is easy to extend with real case studies or additional pages later.

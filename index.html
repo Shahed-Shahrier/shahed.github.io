@@ -3,136 +3,120 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shahed Shahrier — Portfolio</title>
-  <meta name="description" content="Portfolio of Shahed Shahrier (bornohin)" />
+  <meta name="description" content="Shahed Shahrier's offline-first portfolio with dedicated pages for about, achievements, projects, and contact." />
+  <meta name="author" content="Shahed Shahrier" />
+  <meta name="theme-color" content="#071018" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icon.svg" />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="author" content="Shahed-Shahrier" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Shahed Shahrier | Portfolio</title>
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#">Shahed Shahrier</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Achievements</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <a class="brand" href="index.html" aria-label="Shahed Shahrier home">Shahed Shahrier</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="home" aria-label="Intro">
+    <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-text">
-          <h1 id="hero-name">Shahed Shahrier <span class="handle">(@bornohin)</span></h1>
-          <p id="hero-tagline">working where it counts</p>
-          <p id="hero-bio">I build reliable software and solve hard problems — whether shipping production systems or hunting flags in CTFs. I focus on pragmatic solutions that move projects forward and teach others to do the same.</p>
-          <div class="hero-cta">
-            <a class="btn" href="#projects">See achievements</a>
-            <a class="btn ghost" href="#contact">Get in touch</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Offline-first portfolio</p>
+          <h1>Shahed Shahrier builds practical work with clear outcomes.</h1>
+          <p class="lead">I work across software, security, and team execution. This site keeps the structure simple, professional, and fully local so it stays usable even after the first visit.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="about.html">Read about me</a>
+            <a class="btn secondary" href="contact.html">Contact</a>
           </div>
-          <div class="socials" id="social-links">
-            <a href="https://github.com/Shahed-Shahrier" title="GitHub" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/shahed-shahrier/" title="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:shahrier.work2000@gmail.com" title="Email" id="email-link">shahrier.work2000@gmail.com</a>
+          <div class="hero-meta">
+            <span>GitHub Pages ready</span>
+            <span>Local assets only</span>
+            <span>Dedicated landing pages</span>
           </div>
         </div>
-
-        <div class="hero-photo">
-          <!-- Profile image (image1) -->
-          <img id="profile-image" src="assets/image1.png" alt="Profile photo of Shahed Shahrier">
+        <div class="hero-card portrait-card">
+          <img src="assets/image1.png" alt="Portrait of Shahed Shahrier" />
+          <div>
+            <h2>Focused, dependable, and easy to work with.</h2>
+            <p>I prefer clean interfaces, direct communication, and work that can be explained without hand-waving.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <p id="about-text">I enjoy turning ambiguous problems into clear, working systems. My background blends hands-on software engineering with practical security-oriented thinking: I design, build, and harden services, and I regularly take part in capture-the-flag events to sharpen my problem-solving skills.</p>
-    </section>
-
-    <!-- ACHIEVEMENTS / PROJECTS -->
-    <section id="projects" class="section container">
-      <h2>Achievements</h2>
-      <p class="muted">Selected highlights and wins</p>
-
-      <div class="projects-grid" id="projects-list">
-        <article class="project-card">
-          <img src="assets/20250925_230505.jpg" alt="Achievement 1">
-          <div class="project-body">
-            <h3>BUP_RAB — Team Achievement</h3>
-            <p>1st runner-up finish at a university CTF — led exploitation and forensics efforts for the team.</p>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">More</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/Screenshot 2025-10-25 142627.png" alt="Achievement 2">
-          <div class="project-body">
-            <h3>Scoreboard Growth</h3>
-            <p>Contributed to a competitive team placement shown on event scoreboards — consistent problem solving across multiple categories.</p>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Details</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="assets/PXL_20251025_111908472.jpg" alt="Achievement 3">
-          <div class="project-body">
-            <h3>Event & Ops</h3>
-            <p>Organized and participated in security events and team operations — focused on practical, repeatable outcomes and mentorship.</p>
-            <div class="project-links">
-              <a href="#" target="_blank" rel="noopener">Read</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section id="gallery" class="section container">
-      <h2>Gallery</h2>
-      <p class="muted">Event photos and moments</p>
-      <div class="gallery-grid">
-        <img src="assets/image1.png" alt="Image 1">
-        <img src="assets/20250925_230505.jpg" alt="Image 2">
-        <img src="assets/Screenshot 2025-10-25 142627.png" alt="Image 3">
-        <img src="assets/PXL_20251025_111908472.jpg" alt="Image 4">
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container">
-      <h2>Contact</h2>
-      <p>Interested in collaborating or hiring? Connect on GitHub or send an email.</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p><a id="contact-email-link" href="mailto:shahrier.work2000@gmail.com">shahrier.work2000@gmail.com</a></p>
+    <section class="section">
+      <div class="container section-heading">
+        <div>
+          <p class="eyebrow">Section overview</p>
+          <h2>Everything has its own page.</h2>
         </div>
-        <div class="contact-card">
-          <h3>Find me</h3>
-          <p><a href="https://github.com/Shahed-Shahrier" id="contact-github" target="_blank" rel="noopener">GitHub</a><br>
-             <a href="https://www.linkedin.com/in/shahed-shahrier/" id="contact-linkedin" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p class="section-note">The home page acts as the landing hub. Each section below links to a focused page so the portfolio stays easy to scan.</p>
+      </div>
+      <div class="container card-grid four-up">
+        <a class="link-card" href="about.html">
+          <span class="card-kicker">01</span>
+          <h3>About</h3>
+          <p>Background, approach, and what I care about when building products and collaborating with teams.</p>
+        </a>
+        <a class="link-card" href="achievements.html">
+          <span class="card-kicker">02</span>
+          <h3>Achievements</h3>
+          <p>Competition results, event milestones, and proof of execution under pressure.</p>
+        </a>
+        <a class="link-card" href="projects.html">
+          <span class="card-kicker">03</span>
+          <h3>Projects</h3>
+          <p>Representative work areas, delivery patterns, and the kinds of problems I like to solve.</p>
+        </a>
+        <a class="link-card" href="contact.html">
+          <span class="card-kicker">04</span>
+          <h3>Contact</h3>
+          <p>Email, GitHub, and LinkedIn entry points for follow-up conversations.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Highlights</p>
+          <h2>What this portfolio emphasizes.</h2>
+        </div>
+        <div class="stack-list">
+          <article class="stack-item">
+            <h3>Clear structure</h3>
+            <p>Sections are separated into their own pages so recruiters and collaborators can jump straight to what they need.</p>
+          </article>
+          <article class="stack-item">
+            <h3>Offline-first setup</h3>
+            <p>A service worker caches the site after the first visit, which keeps the core pages available when the network is unreliable.</p>
+          </article>
+          <article class="stack-item">
+            <h3>Local assets</h3>
+            <p>Fonts, icons, and images are all served from the repository, so the site does not depend on third-party services to render correctly.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="footer-year"></span> Shahed Shahrier (bornohin). Built with ❤️ · <a href="https://github.com/Shahed-Shahrier/Shahed-Shahrier.github.io" target="_blank" rel="noopener">Source</a></p>
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Shahed Shahrier</p>
+      <p><a href="https://github.com/Shahed-Shahrier/Shahed-Shahrier.github.io">Source repository</a></p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('footer-year').textContent = new Date().getFullYear();
-  </script>
+  <script src="site.js" defer></script>
 </body>
 </html>
