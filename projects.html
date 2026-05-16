@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Projects and live links for Shahed Shahrier." />
-  <meta name="theme-color" content="#071018" />
+  <meta name="theme-color" content="#080808" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=archive-15" />
   <title>Projects | Shahed Shahrier</title>
 </head>
 <body data-page="projects">
@@ -15,108 +15,85 @@
     <div class="container header-inner">
       <a class="brand" href="index.html">Shahed Shahrier</a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="projects.html" aria-current="page">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-text="Home">Home</a>
+        <a href="about.html" data-text="About">About</a>
+        <a href="education.html" data-text="Education">Education</a>
+        <a href="achievements.html" data-text="Achievements">Achievements</a>
+        <a href="certifications.html" data-text="Certifications">Certifications</a>
+        <a href="archive.html" data-text="Archive">Archive</a>
+        <a href="projects.html" data-text="Projects" aria-current="page">Projects</a>
+        <a href="contact.html" data-text="Contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Projects</p>
-          <h1>Project summaries and direct links.</h1>
-          <p class="page-lead">This page lists the main projects from the CV and links to the repository or live demo where available.</p>
-          <div class="quick-links">
-            <a class="btn primary" href="contact.html">Discuss a project</a>
-            <a class="btn secondary" href="achievements.html">View achievements</a>
-          </div>
-        </div>
-        <aside class="hero-card">
-          <h2>How to use this page</h2>
-          <p>Each card points to the repository and, when available, to the published page.</p>
-        </aside>
+    <section class="projects-hero">
+      <div class="container">
+        <h1 class="typing-heading">Projects</h1>
+        <p>System Output: Active Development</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container project-grid">
-        <article class="project-card">
-          <figure>
+    <section class="projects-showcase">
+      <div class="container project-showcase-grid">
+        <article class="project-showcase-card reveal">
+          <div class="project-media">
             <img src="assets/digiland3.jpeg" alt="Digi-Land preview" />
-          </figure>
-          <h3>Digi-Land</h3>
-          <p>Digital land record and mutation portal for Bangladesh.</p>
-          <p><a class="inline-link" href="https://shahrier.tech/digiland_demo1.github.io/" target="_blank" rel="noopener">Live site: shahrier.tech/digiland_demo1.github.io</a></p>
-          <div class="pill-row">
-            <span class="pill">React</span>
-            <span class="pill">TypeScript</span>
-            <span class="pill">Vite</span>
+            <span>01 // Project</span>
           </div>
-          <div class="quick-links">
-            <a class="inline-link" href="https://github.com/Shahed-Shahrier/digiland_demo1.github.io" target="_blank" rel="noopener">Repository</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <figure>
-            <img src="assets/PXL_20251025_111908472.jpg" alt="Security event or team operations photo" />
-          </figure>
-          <h3>CTF & Security Research</h3>
-          <p>Ongoing work in web exploitation, networking, cryptography, reverse engineering, and binary exploitation across 100+ competitions.</p>
-          <div class="pill-row">
-            <span class="pill">CTF</span>
-            <span class="pill">Web</span>
-            <span class="pill">Reverse engineering</span>
+          <div class="project-body">
+            <h2>Digi-Land</h2>
+            <p>Digital land record and mutation portal for Bangladesh.</p>
+            <div class="tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Vite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://shahrier.tech/digiland_demo1.github.io/" target="_blank" rel="noopener">Live_Demo -></a>
+              <a href="https://github.com/Shahed-Shahrier/digiland_demo1.github.io" target="_blank" rel="noopener">Repository -></a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card">
-          <figure>
+        <article class="project-showcase-card reveal">
+          <div class="project-media project-media-logo">
             <img src="assets/museum-logo.svg" alt="Museum Database logo preview" />
-          </figure>
-          <h3>Museum Database Web Application</h3>
-          <p>Built with MySQL and PHP for structured artifact records, search, and update workflows.</p>
-          <p><a class="inline-link" href="https://shahed-shahrier.github.io/museum-database-bangladesh/" target="_blank" rel="noopener">Live page: shahed-shahrier.github.io/museum-database-bangladesh</a></p>
-          <div class="pill-row">
-            <span class="pill">MySQL</span>
-            <span class="pill">PHP</span>
-            <span class="pill">Database app</span>
+            <span>02 // Project</span>
           </div>
-          <div class="quick-links">
-            <a class="inline-link" href="https://github.com/Shahed-Shahrier/museum-database-bangladesh" target="_blank" rel="noopener">Repository</a>
+          <div class="project-body">
+            <h2>Museum Database Web Application</h2>
+            <p>Built with MySQL and PHP for structured artifact records, search, and update workflows.</p>
+            <div class="tags">
+              <span>MySQL</span>
+              <span>PHP</span>
+              <span>Database app</span>
+            </div>
+            <div class="project-links">
+              <a href="https://shahed-shahrier.github.io/museum-database-bangladesh/" target="_blank" rel="noopener">Live_Page -></a>
+              <a href="https://github.com/Shahed-Shahrier/museum-database-bangladesh" target="_blank" rel="noopener">Repository -></a>
+            </div>
           </div>
         </article>
-      </div>
-    </section>
 
-    <section class="section alt-section">
-      <div class="container section-heading">
-        <div>
-          <p class="eyebrow">Additional project</p>
-          <h2>Circuit Weaver</h2>
-        </div>
-        <p class="section-note">Browser-based circuit analysis with DC, transient, and AC modes.</p>
-      </div>
-      <div class="container project-grid">
-        <article class="project-card">
-          <figure>
+        <article class="project-showcase-card reveal">
+          <div class="project-media project-media-logo">
             <img src="assets/circuit-weaver-logo.svg" alt="Circuit Weaver project logo" />
-          </figure>
-          <h3>Circuit Weaver</h3>
-          <p>Advanced circuit analyzer tool built with React, TypeScript, and Vite.</p>
-          <p><a class="inline-link" href="https://shahrier.tech/circuit-weaver/" target="_blank" rel="noopener">Live site: shahrier.tech/circuit-weaver</a></p>
-          <div class="pill-row">
-            <span class="pill">React</span>
-            <span class="pill">TypeScript</span>
-            <span class="pill">Vite</span>
+            <span>03 // Project</span>
           </div>
-          <div class="quick-links">
-            <a class="inline-link" href="https://github.com/Shahed-Shahrier/circuit-weaver" target="_blank" rel="noopener">Repository</a>
+          <div class="project-body">
+            <h2>Circuit Weaver</h2>
+            <p>Advanced circuit analyzer tool built with React, TypeScript, and Vite, with DC, transient, and AC modes.</p>
+            <div class="tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Vite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://shahrier.tech/circuit-weaver/" target="_blank" rel="noopener">Live_Demo -></a>
+              <a href="https://github.com/Shahed-Shahrier/circuit-weaver" target="_blank" rel="noopener">Repository -></a>
+            </div>
           </div>
         </article>
       </div>

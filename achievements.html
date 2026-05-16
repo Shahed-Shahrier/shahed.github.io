@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Competition results and achievements for Shahed Shahrier." />
-  <meta name="theme-color" content="#071018" />
+  <meta name="description" content="Competition results and achievements for Shahed Shahrier and Team Rea11y Annoying Bots." />
+  <meta name="theme-color" content="#080808" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=archive-15" />
   <title>Achievements | Shahed Shahrier</title>
 </head>
 <body data-page="achievements">
@@ -15,11 +15,14 @@
     <div class="container header-inner">
       <a class="brand" href="index.html">Shahed Shahrier</a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="achievements.html" aria-current="page">Achievements</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-text="Home">Home</a>
+        <a href="about.html" data-text="About">About</a>
+        <a href="education.html" data-text="Education">Education</a>
+        <a href="achievements.html" data-text="Achievements" aria-current="page">Achievements</a>
+        <a href="certifications.html" data-text="Certifications">Certifications</a>
+        <a href="archive.html" data-text="Archive">Archive</a>
+        <a href="projects.html" data-text="Projects">Projects</a>
+        <a href="contact.html" data-text="Contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -27,70 +30,270 @@
   <main>
     <section class="page-hero">
       <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Achievements</p>
-          <h1>Competition results and club roles.</h1>
-          <p class="page-lead">This page lists the main results from the CV and keeps them easy to scan.</p>
+        <div class="page-panel reveal">
+          <p class="system-line">achievement.log / verified</p>
+          <h1>Competition records from RAB and my CTF work.</h1>
+          <p class="page-lead">Grouped achievement records covering inter-university, national, and international results.</p>
           <div class="quick-links">
-            <a class="btn primary" href="projects.html">See projects</a>
-            <a class="btn secondary" href="contact.html">Start a conversation</a>
+            <a class="btn-primary" href="projects.html">See projects</a>
+            <a class="btn-outline" href="contact.html">Start a conversation</a>
           </div>
         </div>
-        <aside class="hero-card">
-          <h2>Summary</h2>
-          <p>Placements, team roles, and certifications are written directly here so the page stays factual.</p>
+        <aside class="terminal-card reveal">
+          <p class="section-kicker">Achievements_Record</p>
+          <h2>Team Rea11y Annoying Bots</h2>
+          <p>Shared RAB/team competition data is listed here alongside my existing portfolio context.</p>
+          <div class="tags">
+            <span>International</span>
+            <span>National</span>
+            <span>Inter University</span>
+          </div>
         </aside>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container achievement-grid">
-        <article class="achievement-card">
-          <figure>
-            <img src="assets/20250925_230505.jpg" alt="Team achievement photo from a university CTF" />
-          </figure>
-          <h3>BUP CTF Preliminary</h3>
-          <p>1st Place, 2025.</p>
-        </article>
+    <section class="section achievement-records">
+      <div class="container">
+        <div class="column-title">Achievements_Record</div>
 
-        <article class="achievement-card">
-          <figure>
-            <img src="assets/Screenshot 2025-10-25 142627.png" alt="Scoreboard screenshot showing competition progress" />
-          </figure>
-          <h3>BUP CTF Finals</h3>
-          <p>2nd Place, 2025.</p>
-        </article>
+        <section class="achievement-group" aria-labelledby="inter-university-achievements">
+          <div class="achievement-group-heading">
+            <h2 id="inter-university-achievements">Inter University</h2>
+            <span></span>
+          </div>
+          <div class="achievement-record-grid">
+            <article class="achievement-record terminal-card reveal">
+              <figure>
+                <img src="assets/achievements/bup-ctf.png" alt="BUP CTF achievement record" />
+              </figure>
+              <p class="record-date">2025</p>
+              <h3>1st Place (Preliminary), 2nd Place (Final) - BUP CTF</h3>
+              <p class="record-issuer">Issued_By: Bangladesh University of Professionals</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
 
-        <article class="achievement-card">
-          <figure>
-            <img src="assets/PXL_20251025_111908472.jpg" alt="Security event and team operations photo" />
-          </figure>
-          <h3>Other results</h3>
-          <p>3rd Place in StealthFlags CTF (CUET, 2025), 1st Runner-Up in Circuit Clash 1.0, 3rd Place in Al-Khwarizmi CTF Preliminary 2025, and 4th Place in DIU CyberCon National CTF.</p>
-        </article>
-      </div>
-    </section>
+            <article class="achievement-record terminal-card reveal">
+              <figure>
+                <img src="assets/achievements/circuit-clash.png" alt="Circuit Clash achievement record" />
+              </figure>
+              <p class="record-date">2025</p>
+              <h3>2nd Place (Preliminary), 1st Runner-Up (Final) - Circuit Clash 1.0</h3>
+              <p class="record-issuer">Issued_By: Circuit Clash</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+          </div>
+        </section>
 
-    <section class="section alt-section">
-      <div class="container split-grid">
-        <div>
-          <p class="eyebrow">Roles</p>
-          <h2>Leadership and team activity.</h2>
-        </div>
-        <div class="stack-list">
-          <article class="stack-item">
-            <h3>Team Rea11y Annoying Bots</h3>
-            <p>Founding member and CTF competitor from 2024 to present.</p>
-          </article>
-          <article class="stack-item">
-            <h3>BUP Media & Communication Club</h3>
-            <p>Vice President (Production).</p>
-          </article>
-          <article class="stack-item">
-            <h3>Scope</h3>
-            <p>This page covers competition and role-based achievements only.</p>
-          </article>
-        </div>
+        <section class="achievement-group" aria-labelledby="national-achievements">
+          <div class="achievement-group-heading">
+            <h2 id="national-achievements">National</h2>
+            <span></span>
+          </div>
+          <div class="achievement-record-grid">
+            <article class="achievement-record terminal-card reveal">
+              <figure>
+                <img src="assets/achievements/stealthflags-cuet.png" alt="StealthFlags CUET achievement record" />
+              </figure>
+              <p class="record-date">2025</p>
+              <h3>2nd Runner-Up - StealthFlags (CUET)</h3>
+              <p class="record-issuer">Issued_By: CUET</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record terminal-card reveal">
+              <p class="record-date">2025</p>
+              <h3>DIU CyberCon National CTF</h3>
+              <p class="record-issuer">Issued_By: DIU</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record terminal-card reveal">
+              <p class="record-date">2025</p>
+              <h3>Al-Khwarizmi National CTF</h3>
+              <p class="record-issuer">Issued_By: shibir</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="achievement-group achievement-group-international" aria-labelledby="international-achievements">
+          <div class="achievement-group-heading">
+            <h2 id="international-achievements">International</h2>
+            <span></span>
+          </div>
+          <div class="achievement-record-grid international-record-grid">
+            <article class="achievement-record international-record reveal" data-rank="1">
+              <span class="rank-badge">#1</span>
+              <span class="rank-watermark" aria-hidden="true">1</span>
+              <p class="record-date">Aug 2024 - Present</p>
+              <h3>Founder &amp; #1 Ranked CTF Team (RAB)</h3>
+              <p class="record-issuer">Issued_By: CTFtime</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="13">
+              <span class="rank-badge">#13</span>
+              <span class="rank-watermark" aria-hidden="true">13</span>
+              <p class="record-date">2026</p>
+              <h3>13th Place - CryptoNite CTF (International)</h3>
+              <p class="record-issuer">Issued_By: CryptoNite CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="16">
+              <span class="rank-badge">#16</span>
+              <span class="rank-watermark" aria-hidden="true">16</span>
+              <p class="record-date">2026</p>
+              <h3>16th Place - PascalCTF (International)</h3>
+              <p class="record-issuer">Issued_By: PascalCTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="15">
+              <span class="rank-badge">#15</span>
+              <span class="rank-watermark" aria-hidden="true">15</span>
+              <p class="record-date">2026</p>
+              <h3>15th Place - Pragyan CTF (International)</h3>
+              <p class="record-issuer">Issued_By: Pragyan CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="25">
+              <span class="rank-badge">#25</span>
+              <span class="rank-watermark" aria-hidden="true">25</span>
+              <p class="record-date">2026</p>
+              <h3>25th Place - Axiom CTF</h3>
+              <p class="record-issuer">Issued_By: Axiom CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="24">
+              <span class="rank-badge">#24</span>
+              <span class="rank-watermark" aria-hidden="true">24</span>
+              <p class="record-date">2026</p>
+              <h3>24th Place - BearcatCTF</h3>
+              <p class="record-issuer">Issued_By: BearcatCTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="28">
+              <span class="rank-badge">#28</span>
+              <span class="rank-watermark" aria-hidden="true">28</span>
+              <p class="record-date">2026</p>
+              <h3>28th Place - UniVsThreats CTF Quals</h3>
+              <p class="record-issuer">Issued_By: UniVsThreats CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="20">
+              <span class="rank-badge">#20</span>
+              <span class="rank-watermark" aria-hidden="true">20</span>
+              <p class="record-date">2026</p>
+              <h3>20th Place - KnightCTF</h3>
+              <p class="record-issuer">Issued_By: KnightCTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="13">
+              <span class="rank-badge">#13</span>
+              <span class="rank-watermark" aria-hidden="true">13</span>
+              <p class="record-date">2025</p>
+              <h3>13th Place - QnQSec CTF</h3>
+              <p class="record-issuer">Issued_By: QnQSec CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="14">
+              <span class="rank-badge">#14</span>
+              <span class="rank-watermark" aria-hidden="true">14</span>
+              <p class="record-date">2025</p>
+              <h3>14th Place - h4ckc0n CTF</h3>
+              <p class="record-issuer">Issued_By: h4ckc0n CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="18">
+              <span class="rank-badge">#18</span>
+              <span class="rank-watermark" aria-hidden="true">18</span>
+              <p class="record-date">2025</p>
+              <h3>18th Place - EnigmaXplore 3.0</h3>
+              <p class="record-issuer">Issued_By: EnigmaXplore</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="23">
+              <span class="rank-badge">#23</span>
+              <span class="rank-watermark" aria-hidden="true">23</span>
+              <p class="record-date">2025</p>
+              <h3>23rd Place - COMPFEST CTF</h3>
+              <p class="record-issuer">Issued_By: COMPFEST</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+
+            <article class="achievement-record international-record reveal" data-rank="25">
+              <span class="rank-badge">#25</span>
+              <span class="rank-watermark" aria-hidden="true">25</span>
+              <p class="record-date">2025</p>
+              <h3>25th Place - P3rf3ctr00t CTF</h3>
+              <p class="record-issuer">Issued_By: P3rf3ctr00t CTF</p>
+              <div class="record-footer">
+                <span>Verify_Record</span>
+                <span aria-hidden="true">[OK]</span>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
     </section>
   </main>

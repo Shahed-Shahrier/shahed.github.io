@@ -1,14 +1,17 @@
-const CACHE_NAME = "shahed-portfolio-v2";
+const CACHE_NAME = "shahed-portfolio-v15";
 const OFFLINE_URL = "offline.html";
 const PRECACHE_URLS = [
   "./",
   "index.html",
   "about.html",
+  "education.html",
   "achievements.html",
+  "certifications.html",
+  "archive.html",
   "projects.html",
   "contact.html",
   OFFLINE_URL,
-  "styles.css",
+  "styles.css?v=archive-15",
   "site.js",
   "manifest.webmanifest",
   "assets/icon.svg",
@@ -16,7 +19,11 @@ const PRECACHE_URLS = [
   "assets/image1.png",
   "assets/20250925_230505.jpg",
   "assets/PXL_20251025_111908472.jpg",
-  "assets/Screenshot 2025-10-25 142627.png"
+  "assets/Screenshot 2025-10-25 142627.png",
+  "assets/achievements/rab-ctftime.png",
+  "assets/achievements/bup-ctf.png",
+  "assets/achievements/circuit-clash.png",
+  "assets/achievements/stealthflags-cuet.png"
 ];
 
 self.addEventListener("install", (event) => {

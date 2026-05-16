@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Contact information for Shahed Shahrier." />
-  <meta name="theme-color" content="#071018" />
+  <meta name="theme-color" content="#080808" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=archive-15" />
   <title>Contact | Shahed Shahrier</title>
 </head>
 <body data-page="contact">
@@ -15,11 +15,14 @@
     <div class="container header-inner">
       <a class="brand" href="index.html">Shahed Shahrier</a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="index.html" data-text="Home">Home</a>
+        <a href="about.html" data-text="About">About</a>
+        <a href="education.html" data-text="Education">Education</a>
+        <a href="achievements.html" data-text="Achievements">Achievements</a>
+        <a href="certifications.html" data-text="Certifications">Certifications</a>
+        <a href="archive.html" data-text="Archive">Archive</a>
+        <a href="projects.html" data-text="Projects">Projects</a>
+        <a href="contact.html" data-text="Contact" aria-current="page">Contact</a>
       </nav>
     </div>
   </header>
@@ -27,16 +30,17 @@
   <main>
     <section class="page-hero">
       <div class="container page-hero-grid">
-        <div>
-          <p class="eyebrow">Contact</p>
+        <div class="page-panel reveal">
+          <p class="system-line">contact.route / available</p>
           <h1>Reach me by email, GitHub, or LinkedIn.</h1>
           <p class="page-lead">Direct contact details from the CV are listed below.</p>
           <div class="quick-links">
-            <a class="btn primary" href="mailto:shahrier.work2000@gmail.com">Send email</a>
-            <a class="btn secondary" href="https://github.com/Shahed-Shahrier">GitHub profile</a>
+            <a class="btn-primary" href="mailto:shahrier.work2000@gmail.com">Send email</a>
+            <a class="btn-outline" href="https://github.com/Shahed-Shahrier">GitHub profile</a>
           </div>
         </div>
-        <aside class="hero-card">
+        <aside class="terminal-card reveal">
+          <p class="section-kicker">Details</p>
           <h2>Details</h2>
           <p>Dhaka, Bangladesh. Phone: +8801521727281. Email: shahrier.work2000@gmail.com.</p>
           <p class="offline-banner">Works offline after the first visit</p>
@@ -46,17 +50,17 @@
 
     <section class="section">
       <div class="container contact-grid">
-        <article class="contact-card">
+        <article class="contact-card reveal">
           <h3>Email</h3>
           <p><a href="mailto:shahrier.work2000@gmail.com">shahrier.work2000@gmail.com</a></p>
           <p>Best for direct conversations and project inquiries.</p>
         </article>
-        <article class="contact-card">
+        <article class="contact-card reveal">
           <h3>GitHub</h3>
           <p><a href="https://github.com/Shahed-Shahrier">github.com/Shahed-Shahrier</a></p>
           <p>Source code and project history.</p>
         </article>
-        <article class="contact-card">
+        <article class="contact-card reveal">
           <h3>LinkedIn</h3>
           <p><a href="https://www.linkedin.com/in/shahed-shahrier/">linkedin.com/in/shahed-shahrier</a></p>
           <p>Profile link from the CV.</p>

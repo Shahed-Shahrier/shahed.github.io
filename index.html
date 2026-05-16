@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Portfolio of Shahed Shahrier with about, achievements, projects, and contact pages." />
   <meta name="author" content="Shahed Shahrier" />
-  <meta name="theme-color" content="#071018" />
+  <meta name="theme-color" content="#080808" />
   <meta name="color-scheme" content="dark" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/icon.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=archive-15" />
   <title>Shahed Shahrier | Portfolio</title>
 </head>
 <body data-page="home">
@@ -18,11 +18,14 @@
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Shahed Shahrier home">Shahed Shahrier</a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" data-text="Home" aria-current="page">Home</a>
+        <a href="about.html" data-text="About">About</a>
+        <a href="education.html" data-text="Education">Education</a>
+        <a href="achievements.html" data-text="Achievements">Achievements</a>
+        <a href="certifications.html" data-text="Certifications">Certifications</a>
+        <a href="archive.html" data-text="Archive">Archive</a>
+        <a href="projects.html" data-text="Projects">Projects</a>
+        <a href="contact.html" data-text="Contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -30,56 +33,85 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Portfolio</p>
+        <div class="hero-copy reveal">
+          <p class="system-line">portfolio.system / online</p>
           <h1>Shahed Shahrier.</h1>
-          <p class="lead">Computer Science & Engineering student at BUP, security competitor, and developer working in HTML, CSS, PHP, JavaScript, C, C++, Java, Python, and Bash.</p>
+          <p class="lead">Security competitor and developer working in HTML, CSS, PHP, JavaScript, C, C++, Java, Python, and Bash.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="about.html">Read about me</a>
-            <a class="btn secondary" href="contact.html">Contact</a>
+            <a class="btn-primary" href="about.html">Read about me</a>
+            <a class="btn-outline" href="contact.html">Contact</a>
           </div>
           <div class="hero-meta">
-            <span>BUP CSE student</span>
+            <span>Security competitor</span>
             <span>CTF competitor</span>
             <span>GitHub Pages</span>
           </div>
         </div>
-        <div class="hero-card portrait-card">
+        <aside class="terminal-card portrait-card reveal">
           <img src="assets/image1.png" alt="Portrait of Shahed Shahrier" />
           <div>
+            <p class="section-kicker">Status panel</p>
             <h2>Dhaka, Bangladesh</h2>
-            <p>Reach me at <a class="inline-link" href="mailto:shahrier.work2000@gmail.com">shahrier.work2000@gmail.com</a> or through my public profiles.</p>
+            <dl class="status-grid">
+              <div class="status-row">
+                <dt>Role</dt>
+                <dd>Developer and CTF security competitor</dd>
+              </div>
+              <div class="status-row">
+                <dt>Focus</dt>
+                <dd>Software development, CTF security practice, and club leadership</dd>
+              </div>
+              <div class="status-row">
+                <dt>Contact</dt>
+                <dd><a class="inline-link" href="mailto:shahrier.work2000@gmail.com">shahrier.work2000@gmail.com</a></dd>
+              </div>
+            </dl>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section class="section">
       <div class="container section-heading">
         <div>
-          <p class="eyebrow">Section overview</p>
-          <h2>Each section has its own page.</h2>
+          <p class="section-kicker">Navigation matrix</p>
+          <h2>Open the section you need.</h2>
         </div>
         <p class="section-note">Use the links below to open the page you need.</p>
       </div>
       <div class="container card-grid four-up">
-        <a class="link-card" href="about.html">
+        <a class="link-card reveal" href="about.html">
           <span class="card-kicker">01</span>
           <h3>About</h3>
-          <p>Education, skills, activities, and certifications from my CV.</p>
+          <p>Skills, activities, and current focus from my CV.</p>
         </a>
-        <a class="link-card" href="achievements.html">
+        <a class="link-card reveal" href="achievements.html">
           <span class="card-kicker">02</span>
           <h3>Achievements</h3>
           <p>Contest placements and other results with supporting details.</p>
         </a>
-        <a class="link-card" href="projects.html">
+        <a class="link-card reveal" href="education.html">
           <span class="card-kicker">03</span>
+          <h3>Education</h3>
+          <p>Academic records, grades, and program history.</p>
+        </a>
+        <a class="link-card reveal" href="certifications.html">
+          <span class="card-kicker">04</span>
+          <h3>Certifications</h3>
+          <p>Certificate media cards ready for uploaded proof files.</p>
+        </a>
+        <a class="link-card reveal" href="archive.html">
+          <span class="card-kicker">05</span>
+          <h3>Archive</h3>
+          <p>Future notes, writeups, and records in a dedicated list.</p>
+        </a>
+        <a class="link-card reveal" href="projects.html">
+          <span class="card-kicker">06</span>
           <h3>Projects</h3>
           <p>Project summaries and direct links to the repository and live demo.</p>
         </a>
-        <a class="link-card" href="contact.html">
-          <span class="card-kicker">04</span>
+        <a class="link-card reveal" href="contact.html">
+          <span class="card-kicker">07</span>
           <h3>Contact</h3>
           <p>Email, GitHub, and LinkedIn.</p>
         </a>
@@ -89,19 +121,31 @@
     <section class="section alt-section">
       <div class="container split-grid">
         <div>
-          <p class="eyebrow">Highlights</p>
+          <p class="section-kicker">Highlights</p>
           <h2>Start here.</h2>
         </div>
         <div class="stack-list">
-          <article class="stack-item">
+          <article class="stack-item reveal">
             <h3>About page</h3>
-            <p>Education, technical skills, and certifications.</p>
+            <p>Technical skills, activities, and certifications.</p>
           </article>
-          <article class="stack-item">
+          <article class="stack-item reveal">
             <h3>Achievements page</h3>
             <p>Competition placements and club roles.</p>
           </article>
-          <article class="stack-item">
+          <article class="stack-item reveal">
+            <h3>Education page</h3>
+            <p>Academic records in a dedicated timeline.</p>
+          </article>
+          <article class="stack-item reveal">
+            <h3>Certifications page</h3>
+            <p>Certificate records prepared for media uploads.</p>
+          </article>
+          <article class="stack-item reveal">
+            <h3>Archive page</h3>
+            <p>Future notes and writeups in a record-style index.</p>
+          </article>
+          <article class="stack-item reveal">
             <h3>Projects page</h3>
             <p>Project summaries with repository and live links.</p>
           </article>
