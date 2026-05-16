@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Skills, activities, and profile information for Shahed Shahrier." />
   <meta name="theme-color" content="#080808" />
+  <script>document.documentElement.dataset.theme=localStorage.getItem("shahed-theme")||"dark";document.documentElement.style.colorScheme=document.documentElement.dataset.theme==="light"?"light":"dark";</script>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=archive-15" />
+  <link rel="stylesheet" href="styles.css?v=terminal-22" />
   <title>About | Shahed Shahrier</title>
 </head>
 <body data-page="about">
@@ -24,6 +25,7 @@
         <a href="projects.html" data-text="Projects">Projects</a>
         <a href="contact.html" data-text="Contact">Contact</a>
       </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false" data-theme-toggle>Light</button>
     </div>
   </header>
 
@@ -38,9 +40,9 @@
         <section class="about-profile-grid">
           <div class="about-statement reveal">
             <div class="column-title">About_Identity</div>
-            <h1>Security competitor, developer, and production lead.</h1>
+            <h1>CSE undergraduate, cybersecurity learner, and developer.</h1>
             <div class="about-copy">
-              <p>Shahed Shahrier works across software development, CTF security practice, debate, cadet training, and club production leadership from Dhaka, Bangladesh.</p>
+              <p>I am currently based in Dhaka, and I was born and raised in Rangpur. I studied at a cantonment school and college, where a disciplined environment shaped how I work and learn. I am now studying CSE at BUP, with a strong interest in cybersecurity, software development, and academic research. I enjoy learning new skills and getting hands-on experience through projects, competitions, and practical work.</p>
             </div>
           </div>
 
@@ -52,10 +54,6 @@
             <div>
               <div class="column-title align-end">Identity_Data</div>
               <dl class="status-grid">
-                <div class="status-row">
-                  <dt>ID</dt>
-                  <dd>23524202143</dd>
-                </div>
                 <div class="status-row">
                   <dt>Email</dt>
                   <dd><a class="inline-link" href="mailto:shahrier.work2000@gmail.com">shahrier.work2000@gmail.com</a></dd>
@@ -78,6 +76,8 @@
               <span>Java</span>
               <span>Python</span>
               <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Node.js</span>
               <span>Bash</span>
               <span>HTML</span>
               <span>CSS</span>
@@ -86,7 +86,9 @@
               <span>Tshark</span>
               <span>Nmap</span>
               <span>MySQL</span>
+              <span>PostgreSQL</span>
               <span>SQL</span>
+              <span>Supabase</span>
               <span>XAMPP</span>
               <span>Git</span>
               <span>Burp Suite</span>
@@ -97,11 +99,11 @@
           <div class="reveal">
             <div class="column-title align-end">Primary_Focus</div>
             <div class="about-focus-card">
-              <p>Focused on software development, security practice through CTFs, and production leadership inside university club work.</p>
+              <p>Focused on cybersecurity, software development, academic research, and building practical experience through hands-on work.</p>
               <div class="tags">
-                <span>CTF</span>
+                <span>Cybersecurity</span>
                 <span>Development</span>
-                <span>Production</span>
+                <span>Research</span>
               </div>
             </div>
           </div>
@@ -149,6 +151,32 @@
 
   </main>
 
+
+  <button class="terminal-toggle" type="button" aria-label="Toggle portfolio terminal" aria-expanded="false" data-terminal-toggle>
+    <span>&gt;_</span>
+  </button>
+
+  <aside class="portfolio-terminal" data-terminal hidden aria-label="Interactive portfolio terminal">
+    <div class="terminal-window-bar">
+      <div class="terminal-title">
+        <div class="terminal-lights" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p>GHOSTTY - SHAHED@BUP</p>
+      </div>
+      <button class="terminal-close" type="button" aria-label="Close terminal">x</button>
+    </div>
+    <div class="terminal-screen" role="application" aria-label="Interactive portfolio terminal">
+      <div class="terminal-output" data-terminal-output aria-live="polite"></div>
+      <form class="terminal-form" data-terminal-form>
+        <label class="terminal-prompt" for="terminal-command">shahed@bup ~/portfolio &gt;</label>
+        <input id="terminal-command" name="command" type="text" autocomplete="off" autocorrect="off" spellcheck="false" data-terminal-input aria-label="Terminal command" />
+      </form>
+    </div>
+  </aside>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span data-year></span> Shahed Shahrier</p>
@@ -156,6 +184,6 @@
     </div>
   </footer>
 
-  <script src="site.js" defer></script>
+  <script src="site.js?v=terminal-22" defer></script>
 </body>
 </html>
