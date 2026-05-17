@@ -1,4 +1,4 @@
-const CACHE_NAME = "shahed-portfolio-v23";
+const CACHE_NAME = "shahed-portfolio-v24";
 const OFFLINE_URL = "offline.html";
 const PRECACHE_URLS = [
   "./",
@@ -10,6 +10,8 @@ const PRECACHE_URLS = [
   "archive.html",
   "projects.html",
   "contact.html",
+  "robots.txt",
+  "sitemap.xml",
   OFFLINE_URL,
   "styles.css?v=terminal-22",
   "site.js?v=terminal-22",
