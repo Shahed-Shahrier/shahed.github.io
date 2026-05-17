@@ -1,4 +1,4 @@
-const CACHE_NAME = "shahed-portfolio-v25";
+const CACHE_NAME = "shahed-portfolio-v26";
 const OFFLINE_URL = "offline.html";
 const PRECACHE_URLS = [
   "./",
@@ -16,9 +16,9 @@ const PRECACHE_URLS = [
   "styles.css?v=terminal-22",
   "site.js?v=terminal-22",
   "manifest.webmanifest",
-  "assets/profile-icon.png",
-  "assets/apple-touch-icon.png",
-  "assets/digiland3.jpeg",
+  "assets/profile-icon.png?v=icon-1",
+  "assets/apple-touch-icon.png?v=icon-1",
+  "assets/digiland3.jpeg?v=digiland-1",
   "assets/image1.png",
   "assets/20250925_230505.jpg",
   "assets/PXL_20251025_111908472.jpg",
